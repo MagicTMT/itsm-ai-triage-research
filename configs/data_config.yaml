@@ -1,0 +1,11 @@
+dataset:
+  raw_path: "data/raw/itsm_raw_tickets.csv"
+  processed_path: "data/processed/clean_tickets.csv"
+  synthetic_path: "data/synthetic/sample_tickets.csv"
+  test_size: 0.2
+  random_seed: 42
+
+features:
+  text_column: "description"
+  target_column: "assigned_group"
+  priority_column: "priority"

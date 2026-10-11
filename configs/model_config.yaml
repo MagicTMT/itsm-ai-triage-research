@@ -1,0 +1,16 @@
+baseline:
+  type: "tfidf_logistic"
+  max_features: 5000
+  ngram_range: [1, 2]
+  C: 1.0
+
+transformer:
+  model_name: "distilbert-base-uncased"
+  max_length: 128
+  batch_size: 16
+  learning_rate: 2e-5
+  epochs: 3
+
+oversight:
+  confidence_threshold: 0.85
+  fallback_group: "L2_Human_Triage"

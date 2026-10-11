@@ -1,0 +1,7 @@
+ticket_id,summary,description,priority,category,assigned_group,triage_latency_sec
+TCK-1001,Database Connection Timeout,PostgreSQL database connections failing intermittently for web application server,High,Database,DBA_Team,1420
+TCK-1002,Password Reset Request,User forgot domain active directory account password after weekend,Low,Access,Service_Desk_L1,300
+TCK-1003,VPN Tunnel Disconnected,Corporate VPN gateway dropping connection for remote workforce in EMEA region,Medium,Network,Network_Ops,980
+TCK-1004,Kubernetes Pod CrashLoopBackOff,Microservice order-fulfillment service crashing repeatedly due to OOM,High,Infrastructure,DevOps_L2,1850
+TCK-1005,Email Delivery Failure,Exchange SMTP server queue backing up with undelivered external emails,Medium,Email,Messaging_Team,620
+TCK-1006,SAP ERP License Expired,SAP GUI throwing license file error upon user login attempt,High,Enterprise_App,ERP_Support,1200

@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  itsm-triage-research:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: itsm_triage_app
+    ports:
+      - "8888:8888"
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - JUPYTER_ENABLE_LAB=yes
+    restart: unless-stopped

@@ -1,0 +1,26 @@
+# Base & Scientific Computing
+numpy==1.26.4
+pandas==2.2.1
+scipy==1.12.0
+scikit-learn==1.4.1.post1
+
+# Deep Learning & NLP (CPU Execution)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.1+cpu
+torchaudio==2.2.1+cpu
+torchvision==0.17.1+cpu
+transformers==4.38.2
+datasets==2.18.0
+
+# API & Simulation Framework
+fastapi==0.110.0
+uvicorn==0.28.0
+pydantic==2.6.4
+
+# Notebooks & Reproducibility Infrastructure
+jupyterlab==4.1.5
+notebook==7.1.2
+pyyaml==6.0.1
+python-dotenv==1.0.1
+matplotlib==3.8.3
+seaborn==0.13.2

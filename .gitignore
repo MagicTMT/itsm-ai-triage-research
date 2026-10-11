@@ -1,0 +1,85 @@
+# ==========================================
+# Byte-compiled / optimized / DLL files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==========================================
+# Virtual environments
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# Jupyter Notebook & IDEs
+# ==========================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# Research Data & Model Artifacts (Crucial)
+# ==========================================
+# Raw and processed datasets contain large or sensitive files
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Serialized models, checkpoints, embeddings
+models/*
+!models/.gitkeep
+*.pt
+*.pth
+*.bin
+*.onnx
+*.safetensors
+*.pkl
+*.h5
+
+# Output logs and benchmarks
+outputs/metrics/*.json
+outputs/metrics/*.csv
+!outputs/metrics/.gitkeep
+*.log
+
+# ==========================================
+# Environment Secrets & Local DB Data
+# ==========================================
+.env
+.env.local
+*.pem
+*.key
+postgres_data/
+
+# ==========================================
+# OS-generated files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
