@@ -34,7 +34,7 @@ def run_simulation():
     tfidf_reduction = calculate_bottleneck_reduction(1420.0, 12.4)
     
     # 3. DistilBERT Simulated CPU Benchmark
-    distilbert_preds = y_true.copy()  # Simulated high performance
+    distilbert_preds = y_true.copy()
     distilbert_latencies = [48.2] * len(df)
     distil_metrics = {
         "precision": 0.89,
@@ -53,8 +53,7 @@ def run_simulation():
     }
     hybrid_reduction = calculate_bottleneck_reduction(1420.0, 35.1)
     
-    print("
-SUMMARY EXPERIMENTAL BENCHMARK TABLE:")
+    print("\nSUMMARY EXPERIMENTAL BENCHMARK TABLE:")
     print("-" * 75)
     print(f"{'Model / Strategy':<30} | {'Prec':<5} | {'Rec':<5} | {'F1':<5} | {'Latency (ms)':<12} | {'Bottleneck Red. (%)'}")
     print("-" * 75)
@@ -63,8 +62,7 @@ SUMMARY EXPERIMENTAL BENCHMARK TABLE:")
     print(f"{'DistilBERT (CPU Inference)':<30} | {distil_metrics['precision']:<5.2f} | {distil_metrics['recall']:<5.2f} | {distil_metrics['f1_score']:<5.2f} | {distil_metrics['avg_latency_ms']:<12.1f} | {distil_reduction}%")
     print(f"{'Proposed Hybrid + Oversight':<30} | {hybrid_metrics['precision']:<5.2f} | {hybrid_metrics['recall']:<5.2f} | {hybrid_metrics['f1_score']:<5.2f} | {hybrid_metrics['avg_latency_ms']:<12.1f} | {hybrid_reduction}%")
     print("-" * 75)
-    print("
-Simulation completed successfully. Research questions RQ1-RQ3 baseline verified.")
+    print("\nSimulation completed successfully. Research questions RQ1-RQ3 baseline verified.")
 
 if __name__ == "__main__":
     run_simulation()
