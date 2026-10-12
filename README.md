@@ -59,7 +59,7 @@ Run the full experimental pipeline end-to-end in 3 commands:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-org/itsm-ai-triage-research.git && cd itsm-ai-triage-research
+git clone https://github.com/MagicTMT/itsm-ai-triage-research.git && cd itsm-ai-triage-research
 
 # 2. Build and launch the reproducible CPU environment
 docker compose up --build -d
@@ -68,7 +68,6 @@ docker compose up --build -d
 docker exec -it itsm_triage_app python scripts/run_simulation.py
 ```
 
-*Access JupyterLab directly at `http://localhost:8888` (configured in `.env`).*
 
 ---
 
